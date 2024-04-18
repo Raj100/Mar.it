@@ -1,22 +1,37 @@
 import requests
 
-# Generate an image
-prompt = "Ram Navami Card Design"
-response = requests.post(
-    f"https://api.stability.ai/v2beta/stable-image/generate/core",
-    headers={
-        "authorization": f"Bearer sk-ncA7ITi7ljJIlNj4XTxdCV6MjBOLE62W3MxkLyDVmoDCfvZA",
-        "accept": "image/*"
-    },
-    files={"none": ''},
-    data={
-        "prompt": prompt,
-        "output_format": "webp",
-    },
-)
+import os
+# importing necessary functions from dotenv library
+from dotenv import load_dotenv, dotenv_values 
 
-if response.status_code == 200:
-    with open("./image1.webp", 'wb') as file:
-        file.write(response.content)
-else:
-    raise Exception(str(response.json()))
+def img_gen(prompt_ = "test"):
+    load_dotenv() 
+
+    sdkey = os.getenv("SD_KEY")
+    
+    prompt = prompt_ #"Ram Navami Card Design"
+    response = requests.post(
+        f"https://api.stability.ai/v2beta/stable-image/generate/core",
+        headers={
+            "authorization": f"Bearer {sdkey}",
+            "accept": "image/*"
+        },
+        files={"none": ''},
+        data={
+            "prompt": prompt,
+            "output_format": "webp",
+        },
+    )
+
+    if response.status_code == 200:
+        with open("./image1.webp", 'wb') as file:
+            file.write(response.content)
+    else:
+        raise Exception(str(response.json()))
+
+def img_text_overlay(image_file = "pass", text = "text"):
+    pass
+
+
+if __name__ == "__main__":
+    pass
