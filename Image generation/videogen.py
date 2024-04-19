@@ -90,11 +90,11 @@ if not os.path.exists(newpath):
 
 occasion = "Diwali Greeting cards"
 
-mprompt = f"{occasion} from a company called {company_name} located in {address}"
+mprompt = f"a company called {company_name} located in {address} and {deal_in}"
 
-for i in range(0):
+for i in range(3):
     Imagegen.img_gen(prompt_=mprompt, fname=f"{newpath}\\img{i}")
-    print(f"{i+1} / 5 images done")
+    print(f"{i+1} / 3 images done")
 
 """
 (
