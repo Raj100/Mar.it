@@ -33,24 +33,24 @@ const page = () => {
         </div>
         </div>
         <div className="container mx-auto">
-            <h1 className="text-2xl font-bold">Festive Posts</h1>
+            <h1 className="text-2xl font-bold">Customized Posts</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-white p-4 shadow-md rounded-md">
-                <Image src="/diwali.png" alt="diwali" width={300} height={200} />
-                <h2 className="text-xl font-semibold">Diwali</h2>
-                <p>Diwali is a festival of lights</p>
+                <Image src="/cold.jpeg" alt="diwali" width={300} height={200} />
+                <h2 className="text-xl font-semibold">Cold Storage</h2>
+                <p>Cold Storage</p>
                 <Link href="/festiveposts/diwali">Read More</Link>
             </div>
             <div className="bg-white p-4 shadow-md rounded-md">
-                <Image src="/holi.png" alt="holi" width={300} height={200} />
-                <h2 className="text-xl font-semibold">Holi</h2>
-                <p>Holi is a festival of colors</p>
+                <Image src="/stationery.jpeg" alt="stationery" width={300} height={200} />
+                <h2 className="text-xl font-semibold">Stationery</h2>
+                <p>Stationery</p>
                 <Link href="/festiveposts/holi">Read More</Link>
             </div>
             <div className="bg-white p-4 shadow-md rounded-md">
-                <Image src="/christmas.png" alt="christmas" width={300} height={200} />
-                <h2 className="text-xl font-semibold">Christmas</h2>
-                <p>Christmas is a festival of joy</p>
+                <Image src="/Bakery.jpeg" alt="Bakery" width={300} height={200} />
+                <h2 className="text-xl font-semibold">Bakery</h2>
+                <p>Bakery</p>
                 <Link href="/festiveposts/christmas">Read More</Link>
             </div>
             </div>

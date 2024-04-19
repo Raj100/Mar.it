@@ -31,8 +31,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex gap-5 my-4">
-         <Link href="CustomisedPrompts"><div className="p-2 bg-blue-500 text-white rounded-lg">Customised Prompt</div></Link> 
-         <Link href="FestivePosts"> <div className="p-2">Festive Posts</div></Link> 
+         <Link href="CustomisedPrompts"><div className="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-900">Customised Prompt</div></Link> 
+         <Link href="FestivePosts"> <div className="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-900">Festive Posts</div></Link> 
         </div>
 
 
