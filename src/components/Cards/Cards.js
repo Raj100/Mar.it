@@ -41,7 +41,7 @@ function Cards() {
         onMouseEnter={handleHover2}
         onMouseLeave={handleLeave2}
       >
-                        <Image src="/diwali.png" alt="diwali" width={300} height={200} />
+                        <Image src="/image1.png" alt="diwali" width={300} height={200} />
 
       </div>
       <div
@@ -49,7 +49,7 @@ function Cards() {
           isHovered2 ? 'hovered' : ''
         }`}
       >
-                        <Image src="/diwali.png" alt="diwali" width={300} height={200} />
+                        <Image src="/image2.png" alt="diwali" width={300} height={200} />
 
       </div>
     </div>
