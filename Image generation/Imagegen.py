@@ -4,7 +4,7 @@ import os
 # importing necessary functions from dotenv library
 from dotenv import load_dotenv, dotenv_values 
 
-def img_gen(prompt_ = "test"):
+def img_gen(prompt_ = "test", fname = "img1"):
     load_dotenv() 
 
     sdkey = os.getenv("SD_KEY")
@@ -19,12 +19,12 @@ def img_gen(prompt_ = "test"):
         files={"none": ''},
         data={
             "prompt": prompt,
-            "output_format": "webp",
+            "output_format": "png",
         },
     )
 
     if response.status_code == 200:
-        with open("./image1.webp", 'wb') as file:
+        with open(f"{fname}.png", 'wb') as file:
             file.write(response.content)
     else:
         raise Exception(str(response.json()))
